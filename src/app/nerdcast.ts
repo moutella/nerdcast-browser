@@ -1,6 +1,10 @@
 export interface Nerdcast {
     id: number;
-    name: string;
+    title: string;
+    desc: string;
     duration: number;
     url: string;
+    image: string;
+    episode: number;
+
 }

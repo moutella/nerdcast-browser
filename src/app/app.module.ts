@@ -1,20 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainCardComponent } from './main-card/main-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NcCardComponent } from './nc-card/nc-card.component';
+
+import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainCardComponent
+    NcCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
