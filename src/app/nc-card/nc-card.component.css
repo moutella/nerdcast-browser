@@ -13,5 +13,8 @@
   width: 15rem;
   height: 20rem;
   overflow: auto;
-
+  
+}
+.nerdcast-card::-webkit-scrollbar {
+  display: none;
 }
