@@ -9,7 +9,9 @@
       </mat-card-header>
       <img mat-card-image src="{{ nerdcast.image }}" alt="Foto do nerdcast">
       <div *ngFor="let insertion of nerdcast.insertions">
-      <img mat-card-image src="{{ insertion.image }}" alt="Foto do nerdcast">
+      <p>{{ insertion["start-time"]/60 }}        </p>
+        <img mat-card-image src="{{ insertion.image }}" alt="Foto do nerdcast">
+        
       </div>
       <mat-card-content>
         <div [innerHTML]="nerdcast.description"></div>
