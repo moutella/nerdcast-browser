@@ -9,11 +9,13 @@ import { NcCardComponent } from './nc-card/nc-card.component';
 
 import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { NcDetailComponent } from './nc-detail/nc-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NcCardComponent
+    NcCardComponent,
+    NcDetailComponent
   ],
   imports: [
     BrowserModule,

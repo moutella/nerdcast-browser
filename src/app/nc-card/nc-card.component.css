@@ -1,3 +1,17 @@
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  align-content: flex-start;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
 .nerdcast-card {
-    max-width: 400px;
+  margin: 2rem 2rem 0 0;
+  width: 15rem;
+  height: 20rem;
+  overflow: auto;
+
 }
